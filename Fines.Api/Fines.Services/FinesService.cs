@@ -26,8 +26,7 @@ public class FinesService : IFinesService
             FineNo = fine.FineNo,
             FineDate = fine.FineDate,
             FineType = fine.FineType,
-            CustomerName = fine.CustomerName,
-            VehicleRegNo = fine.VehicleRegNo,
+            VehicleRegNo = fine.Vehicle.RegistrationNumber,
             VehicleDriverName = fine.VehicleDriverName
         };
     }

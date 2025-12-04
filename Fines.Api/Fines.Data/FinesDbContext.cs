@@ -11,12 +11,23 @@ public class FinesDbContext : DbContext
     }
 
     public DbSet<FinesEntity> Fines { get; set; }
+    public DbSet<CustomerEntity> Customers { get; set; }
+    public DbSet<VehicleEntity> Vehicles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        // Seed 25 entries with 5 of each fine type
+        // Configure relationships
+        modelBuilder.Entity<FinesEntity>()
+            .HasOne(f => f.Vehicle)
+            .WithMany()
+            .HasForeignKey(f => f.VehicleId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        // Seed data
+        modelBuilder.Entity<VehicleEntity>().HasData(VehicleSeedData.GetSeedData());
+        modelBuilder.Entity<CustomerEntity>().HasData(CustomerSeedData.GetSeedData());
         modelBuilder.Entity<FinesEntity>().HasData(FinesSeedData.GetSeedData());
     }
 }

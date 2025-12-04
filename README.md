@@ -24,17 +24,17 @@ You will be working with a Fines Management system that consists of a .NET API b
    - Ensure all code is committed and the repository is public (or accessible to reviewers)
 
 ## Your Task
-Extend or modify the API and frontend, to support filtering based on the below critera:
+Extend and modify the API/frontend, to include the follwing based on the below critera:
+
+### Additional Columns
+
+1. Customer Name
 
 ### Filters
 
-1. Fine Date
-2. Fine Type
-3. Vehicle Registration
-
-### Bonus Points
-
-If you have time, feel free to add one or two small improvements that you think are worthwhile. 
+1. Fine Date - Date Picker
+2. Fine Type - Drop Down
+3. Vehicle Registration - Free text
 
 ## Getting Started
 

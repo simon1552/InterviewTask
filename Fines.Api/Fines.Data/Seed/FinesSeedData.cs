@@ -16,9 +16,8 @@ public static class FinesSeedData
                 FineNo = "F001",
                 FineDate = new DateTime(2024, 3, 15),
                 FineType = FineType.Speeding,
-                CustomerName = "Michael Johnson",
-                VehicleRegNo = "ABC123",
-                VehicleDriverName = "Michael Johnson"
+                VehicleDriverName = "Michael Johnson",
+                VehicleId = 1
             },
             new FinesEntity
             {
@@ -26,9 +25,8 @@ public static class FinesSeedData
                 FineNo = "F002",
                 FineDate = new DateTime(2024, 5, 22),
                 FineType = FineType.Speeding,
-                CustomerName = "Sarah Williams",
-                VehicleRegNo = "XYZ789",
-                VehicleDriverName = "Sarah Williams"
+                VehicleDriverName = "Sarah Williams",
+                VehicleId = 2
             },
             new FinesEntity
             {
@@ -36,9 +34,8 @@ public static class FinesSeedData
                 FineNo = "F003",
                 FineDate = new DateTime(2024, 7, 8),
                 FineType = FineType.Speeding,
-                CustomerName = "David Brown",
-                VehicleRegNo = "DEF456",
-                VehicleDriverName = "Jennifer Brown"
+                VehicleDriverName = "Jennifer Brown",
+                VehicleId = 3
             },
             new FinesEntity
             {
@@ -46,9 +43,8 @@ public static class FinesSeedData
                 FineNo = "F004",
                 FineDate = new DateTime(2024, 9, 14),
                 FineType = FineType.Speeding,
-                CustomerName = "Emma Garcia",
-                VehicleRegNo = "GHI321",
-                VehicleDriverName = "Emma Garcia"
+                VehicleDriverName = "Emma Garcia",
+                VehicleId = 4
             },
             new FinesEntity
             {
@@ -56,9 +52,8 @@ public static class FinesSeedData
                 FineNo = "F005",
                 FineDate = new DateTime(2024, 11, 29),
                 FineType = FineType.Speeding,
-                CustomerName = "Robert Martinez",
-                VehicleRegNo = "JKL654",
-                VehicleDriverName = "Robert Martinez"
+                VehicleDriverName = "Robert Martinez",
+                VehicleId = 5
             },
 
             // Parking Fines (F006-F010)
@@ -68,9 +63,8 @@ public static class FinesSeedData
                 FineNo = "F006",
                 FineDate = new DateTime(2024, 2, 10),
                 FineType = FineType.Parking,
-                CustomerName = "Lisa Anderson",
-                VehicleRegNo = "MNO987",
-                VehicleDriverName = "Lisa Anderson"
+                VehicleDriverName = "Lisa Anderson",
+                VehicleId = 6
             },
             new FinesEntity
             {
@@ -78,9 +72,8 @@ public static class FinesSeedData
                 FineNo = "F007",
                 FineDate = new DateTime(2024, 4, 17),
                 FineType = FineType.Parking,
-                CustomerName = "James Wilson",
-                VehicleRegNo = "PQR246",
-                VehicleDriverName = "James Wilson"
+                VehicleDriverName = "James Wilson",
+                VehicleId = 7
             },
             new FinesEntity
             {
@@ -88,9 +81,8 @@ public static class FinesSeedData
                 FineNo = "F008",
                 FineDate = new DateTime(2024, 6, 25),
                 FineType = FineType.Parking,
-                CustomerName = "Mary Thompson",
-                VehicleRegNo = "STU135",
-                VehicleDriverName = "Thomas Thompson"
+                VehicleDriverName = "Thomas Thompson",
+                VehicleId = 8
             },
             new FinesEntity
             {
@@ -98,9 +90,8 @@ public static class FinesSeedData
                 FineNo = "F009",
                 FineDate = new DateTime(2024, 8, 3),
                 FineType = FineType.Parking,
-                CustomerName = "William Davis",
-                VehicleRegNo = "VWX802",
-                VehicleDriverName = "William Davis"
+                VehicleDriverName = "William Davis",
+                VehicleId = 9
             },
             new FinesEntity
             {
@@ -108,9 +99,8 @@ public static class FinesSeedData
                 FineNo = "F010",
                 FineDate = new DateTime(2024, 10, 19),
                 FineType = FineType.Parking,
-                CustomerName = "Jennifer Rodriguez",
-                VehicleRegNo = "YZA579",
-                VehicleDriverName = "Jennifer Rodriguez"
+                VehicleDriverName = "Jennifer Rodriguez",
+                VehicleId = 10
             },
 
             // Red Light Violation Fines (F011-F015)
@@ -120,9 +110,8 @@ public static class FinesSeedData
                 FineNo = "F011",
                 FineDate = new DateTime(2024, 1, 28),
                 FineType = FineType.RedLightViolation,
-                CustomerName = "Richard Lee",
-                VehicleRegNo = "BCD147",
-                VehicleDriverName = "Richard Lee"
+                VehicleDriverName = "Richard Lee",
+                VehicleId = 11
             },
             new FinesEntity
             {
@@ -130,9 +119,8 @@ public static class FinesSeedData
                 FineNo = "F012",
                 FineDate = new DateTime(2024, 3, 30),
                 FineType = FineType.RedLightViolation,
-                CustomerName = "Linda Harris",
-                VehicleRegNo = "EFG258",
-                VehicleDriverName = "Linda Harris"
+                VehicleDriverName = "Linda Harris",
+                VehicleId = 12
             },
             new FinesEntity
             {
@@ -140,9 +128,8 @@ public static class FinesSeedData
                 FineNo = "F013",
                 FineDate = new DateTime(2024, 5, 12),
                 FineType = FineType.RedLightViolation,
-                CustomerName = "Thomas Clark",
-                VehicleRegNo = "HIJ369",
-                VehicleDriverName = "Patricia Clark"
+                VehicleDriverName = "Patricia Clark",
+                VehicleId = 13
             },
             new FinesEntity
             {
@@ -150,9 +137,8 @@ public static class FinesSeedData
                 FineNo = "F014",
                 FineDate = new DateTime(2024, 7, 21),
                 FineType = FineType.RedLightViolation,
-                CustomerName = "Patricia Walker",
-                VehicleRegNo = "KLM741",
-                VehicleDriverName = "Patricia Walker"
+                VehicleDriverName = "Patricia Walker",
+                VehicleId = 14
             },
             new FinesEntity
             {
@@ -160,9 +146,8 @@ public static class FinesSeedData
                 FineNo = "F015",
                 FineDate = new DateTime(2024, 9, 7),
                 FineType = FineType.RedLightViolation,
-                CustomerName = "Daniel Lewis",
-                VehicleRegNo = "NOP852",
-                VehicleDriverName = "Daniel Lewis"
+                VehicleDriverName = "Daniel Lewis",
+                VehicleId = 15
             },
 
             // No Insurance Fines (F016-F020)
@@ -172,9 +157,8 @@ public static class FinesSeedData
                 FineNo = "F016",
                 FineDate = new DateTime(2024, 2, 14),
                 FineType = FineType.NoInsurance,
-                CustomerName = "Elizabeth Hall",
-                VehicleRegNo = "QRS963",
-                VehicleDriverName = "Elizabeth Hall"
+                VehicleDriverName = "Elizabeth Hall",
+                VehicleId = 16
             },
             new FinesEntity
             {
@@ -182,9 +166,8 @@ public static class FinesSeedData
                 FineNo = "F017",
                 FineDate = new DateTime(2024, 4, 9),
                 FineType = FineType.NoInsurance,
-                CustomerName = "Matthew Young",
-                VehicleRegNo = "TUV159",
-                VehicleDriverName = "Matthew Young"
+                VehicleDriverName = "Matthew Young",
+                VehicleId = 17
             },
             new FinesEntity
             {
@@ -192,9 +175,8 @@ public static class FinesSeedData
                 FineNo = "F018",
                 FineDate = new DateTime(2024, 6, 18),
                 FineType = FineType.NoInsurance,
-                CustomerName = "Barbara Allen",
-                VehicleRegNo = "WXY267",
-                VehicleDriverName = "Steven Allen"
+                VehicleDriverName = "Steven Allen",
+                VehicleId = 18
             },
             new FinesEntity
             {
@@ -202,9 +184,8 @@ public static class FinesSeedData
                 FineNo = "F019",
                 FineDate = new DateTime(2024, 8, 26),
                 FineType = FineType.NoInsurance,
-                CustomerName = "Christopher King",
-                VehicleRegNo = "ZAB378",
-                VehicleDriverName = "Christopher King"
+                VehicleDriverName = "Christopher King",
+                VehicleId = 19
             },
             new FinesEntity
             {
@@ -212,9 +193,8 @@ public static class FinesSeedData
                 FineNo = "F020",
                 FineDate = new DateTime(2024, 10, 11),
                 FineType = FineType.NoInsurance,
-                CustomerName = "Susan Moore",
-                VehicleRegNo = "CDE489",
-                VehicleDriverName = "Susan Moore"
+                VehicleDriverName = "Susan Moore",
+                VehicleId = 20
             },
 
             // Illegal Parking Fines (F021-F025)
@@ -224,9 +204,8 @@ public static class FinesSeedData
                 FineNo = "F021",
                 FineDate = new DateTime(2024, 1, 19),
                 FineType = FineType.SeatBeltViolation,
-                CustomerName = "Andrew Martin",
-                VehicleRegNo = "FGH591",
-                VehicleDriverName = "Andrew Martin"
+                VehicleDriverName = "Andrew Martin",
+                VehicleId = 21
             },
             new FinesEntity
             {
@@ -234,9 +213,8 @@ public static class FinesSeedData
                 FineNo = "F022",
                 FineDate = new DateTime(2024, 3, 27),
                 FineType = FineType.SeatBeltViolation,
-                CustomerName = "Jessica Taylor",
-                VehicleRegNo = "IJK627",
-                VehicleDriverName = "Jessica Taylor"
+                VehicleDriverName = "Jessica Taylor",
+                VehicleId = 22
             },
             new FinesEntity
             {
@@ -244,9 +222,8 @@ public static class FinesSeedData
                 FineNo = "F023",
                 FineDate = new DateTime(2024, 5, 5),
                 FineType = FineType.SeatBeltViolation,
-                CustomerName = "Mark Jackson",
-                VehicleRegNo = "LMN738",
-                VehicleDriverName = "Emily Jackson"
+                VehicleDriverName = "Emily Jackson",
+                VehicleId = 23
             },
             new FinesEntity
             {
@@ -254,9 +231,8 @@ public static class FinesSeedData
                 FineNo = "F024",
                 FineDate = new DateTime(2024, 7, 16),
                 FineType = FineType.SeatBeltViolation,
-                CustomerName = "Emily White",
-                VehicleRegNo = "OPQ849",
-                VehicleDriverName = "Emily White"
+                VehicleDriverName = "Emily White",
+                VehicleId = 24
             },
             new FinesEntity
             {
@@ -264,9 +240,8 @@ public static class FinesSeedData
                 FineNo = "F025",
                 FineDate = new DateTime(2024, 9, 23),
                 FineType = FineType.SeatBeltViolation,
-                CustomerName = "Paul Lopez",
-                VehicleRegNo = "RST915",
-                VehicleDriverName = "Paul Lopez"
+                VehicleDriverName = "Paul Lopez",
+                VehicleId = 25
             }
         };
     }

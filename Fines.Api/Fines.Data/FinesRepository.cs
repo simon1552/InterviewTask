@@ -14,6 +14,8 @@ public class FinesRepository : IFinesRepository
 
     public async Task<IEnumerable<FinesEntity>> GetAllFinesAsync()
     {
-        return await _context.Fines.ToListAsync();
+        return await _context.Fines
+            .Include(f => f.Vehicle)
+            .ToListAsync();
     }
 }

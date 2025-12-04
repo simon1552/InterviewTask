@@ -60,7 +60,6 @@ Retrieves a list of all fines in the system.
     "fineNo": "FN-2024-001",
     "fineDate": "2024-12-01T00:00:00",
     "fineType": "Parking",
-    "customerName": "John Doe",
     "vehicleRegNo": "ABC123",
     "vehicleDriverName": "John Doe"
   }
@@ -82,9 +81,16 @@ Interactive API documentation is available via Swagger UI when running in develo
 - **[xUnit](https://xunit.net/)** - Testing framework
 - **[Moq](https://github.com/moq/moq4)** - Mocking library for unit tests
 
+## Data Model
+
+The API uses the following entities:
+
+- **FinesEntity** - Contains fine records with references to vehicles
+- **VehicleEntity** - Stores vehicle information (registration number, make, model, color, year, VIN, engine size, fuel type, insurance and MOT expiry dates)
+- **CustomerEntity** - Contains customer details (name, email, phone, address, date of birth, driver license number)
 
 ### Development Notes
 
-1. The application uses an **in-memory database** which is seeded on startup
+1. The application uses an **in-memory database** which is seeded on startup with 25 fines, 25 vehicles, and 25 customers
 2. Data will be lost when the application restarts
 3. **CORS is configured to allow all origins** - this should be restricted in production
