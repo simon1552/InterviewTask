@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FineType } from "../enum/fineType";
 
-const API_URL = "https://localhost:5001";
+const API_URL = "https://localhost:7200/api";
 
 interface Fine {
     fineRef: string;
