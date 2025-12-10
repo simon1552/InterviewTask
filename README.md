@@ -34,11 +34,13 @@ Extend and modify the API and frontend, to include the following:
 ### Additional Columns
 
 Add the following column to the existing table of fines on the front end:
+
 **Customer Name** - The first and last name of the customer who received the fine.
 
 ### Filters
 
 Implement filters on the front end to allow users to filter fines on the following fields:
+
 1. **Fine Date** - Date picker
 2. **Fine Type** - Drop down / Select
 3. **Vehicle Registration** - Free text
