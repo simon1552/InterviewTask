@@ -5,20 +5,13 @@ namespace Fines.Api;
 
 [Route("api/[controller]")]
 [ApiController]
-public class FinesController : ControllerBase
+public class FinesController(IFinesService finesService) : ControllerBase
 {
-    private readonly IFinesService _finesService;
-
-    public FinesController(IFinesService finesService)
-    {
-        _finesService = finesService;
-    }
-
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<FinesResponse>), StatusCodes.Status200OK)]
     public async Task<ActionResult<IEnumerable<FinesResponse>>> GetFines()
     {
-        var fines = await _finesService.GetFinesAsync();
+        var fines = await finesService.GetFinesAsync();
         return Ok(fines);
     }
 }
