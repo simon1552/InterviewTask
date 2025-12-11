@@ -3,7 +3,13 @@ import { Fine } from "../types/fine";
 
 const API_URL = "http://localhost:5200/api";
 
-export function useFines() {
+interface UseFinesParams {
+  fineType?: string;
+  fineDate?: string;
+  vehicleReg?: string;
+}
+
+export function useFines(params: UseFinesParams = {}) {
   const [fines, setFines] = useState<Fine[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -14,7 +20,12 @@ export function useFines() {
       setError(null);
 
       try {
-        const response = await fetch(`${API_URL}/fines`);
+        const query = new URLSearchParams();
+        if (params.fineType) query.append("fineType", params.fineType);
+        if (params.fineDate) query.append("fineDate", params.fineDate);
+        if (params.vehicleReg) query.append("vehicleReg", params.vehicleReg);
+
+        const response = await fetch(`${API_URL}/fines/getFilteredFines?${query.toString()}`);
 
         if (!response.ok) {
           throw new Error(response.statusText);
@@ -36,7 +47,7 @@ export function useFines() {
     };
 
     fetchFines();
-  }, []);
+  }, [params.fineType, params.fineDate, params.vehicleReg]);
 
   return { fines, loading, error };
 }
